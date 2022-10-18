@@ -1,0 +1,28 @@
+<table class="table">
+<thead class="thead-light">
+    <tr>
+    <th scope="col">Id</th>
+    <th scope="col">RegistrationDate</th>
+    <th scope="col">BirthDate</th>
+    <th scope="col">RegistrateCpf</th>
+    <th scope="col">RegistrateName</th>
+    <th scope="col">FatherName</th>
+    <th scope="col">FatherCpf</th>
+    <th scope="col">MotherName</th>
+    <th scope="col">MotherCpf</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let births of birthList$|async">
+    <td>{{births.birthId}}</td>
+    <td>{{births.registrationDate}}</td>
+    <td>{{births.birthDate}}</td>
+    <td>{{births.registrateCpf}}</td>
+    <td>{{births.registrateName}}</td>
+    <td>{{births.fatherName}}</td>
+    <td>{{births.fatherCpf}}</td>
+    <td>{{births.motherName}}</td>
+    <td>{{births.motherCpf}}</td>
+    </tr>
+</tbody>
+</table>

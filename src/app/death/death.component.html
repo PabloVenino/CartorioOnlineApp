@@ -1,0 +1,30 @@
+<table class="table">
+<thead class="thead-dark">
+    <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Data de Registro</th>
+    <th scope="col">Data da Morte</th>
+    <th scope="col">Nome Falecido</th>
+    <th scope="col">CPF Falecido</th>
+    <th scope="col">Data Aniversário Falecido</th>
+    <th scope="col">Nome do Pai</th>
+    <th scope="col">Aniversario do Pai</th>
+    <th scope="col">Nome da Mãe</th>
+    <th scope="col">Aniversário da Mae</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let death of deathList$|async">
+    <td>{{death.deathId}}</td>
+    <td>{{death.registrationDate}}</td>
+    <td>{{death.deathDate}}</td>
+    <td>{{death.deadName}}</td>
+    <td>{{death.deadCpf}}</td>
+    <td>{{death.deadBirthDate}}</td>
+    <td>{{death.fatherName}}</td>
+    <td>{{death.fatherBirthDate}}</td>
+    <td>{{death.motherName}}</td>
+    <td>{{death.motherCpf}}</td>
+    </tr>
+</tbody>
+</table>
